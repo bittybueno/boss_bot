@@ -1,4 +1,5 @@
 import argparse
+import random
 from ascii_magic import AsciiArt
 from random import randint
 from asciimatics.effects import Cycle, Stars
@@ -8,6 +9,7 @@ from asciimatics.screen import Screen
 from pyjokes import get_joke
 from time import sleep
 from colorama import Fore, Style
+from sinjin_burns import sinjin_burns
 
 
 class BossBot:
@@ -22,7 +24,7 @@ class BossBot:
         print(Fore.YELLOW + get_joke() + Style.RESET_ALL)
 
     def sinjin(self):
-        print(Fore.RED + 'Sinjin, stop breaking staging!!!' + Style.RESET_ALL)
+        print(Fore.RED + random.choice(sinjin_burns) + Style.RESET_ALL)
 
     def commands(self):
         list_commands()
