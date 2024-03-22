@@ -7,7 +7,6 @@ from asciimatics.renderers import FigletText
 from asciimatics.scene import Scene
 from asciimatics.screen import Screen
 from pyjokes import get_joke
-from time import sleep
 from colorama import Fore, Style
 from sinjin_burns import sinjin_burns
 
@@ -102,7 +101,7 @@ parser_joke = subparsers.add_parser("commands", help="See commands")
 boss_bot = BossBot()
 
 Screen.wrapper(intro)
-my_art = AsciiArt.from_image('jason.png')
+my_art = AsciiArt.from_image('src/jason.png')
 my_art.to_terminal(columns=50)
 
 # Main loop
